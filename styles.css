@@ -47,12 +47,15 @@ main {
 
 .main-content {
   flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-content > div {
   padding-left: 40px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .main-content p {
@@ -89,14 +92,45 @@ form section {
 
 input {
   padding: 6px 10px;
-  border-color: solid 1px rgba(200, 200, 200, 10%);
+  border: solid 1px rgba(200, 200, 200, 100%);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: 1px 1px 5px gray;
+  border: solid 1px blue;
 }
 
 label {
   font-size: 13px;
 }
 
-input:focus {
-  border-color: rgba(0, 0, 255, 10%);
-  box-shadow: 2px 2px 5px rgba(0,0,0,50%);
+.main-form {
+  box-shadow: 0 3px 6px rgba(128, 128, 128, 50%);
+}
+
+.main-footer {
+  margin-top: 20px;
+}
+
+button {
+  padding: 13px 45px;
+  font-size: 16px;
+  color: white;
+  background-color: #596d48;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+a {
+  color: #596d48;
+  text-decoration: none;
+}
+
+input:invalid {
+  outline: none;
+  border-color: red;
 }
