@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: OdinFam;
+  src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.main-visual {
+  position: relative;
+  flex: 0;
+}
+
+.main-visual > img {
+  height: 100vh;
+  width: auto;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20%;
+  height: 15%;
+  flex: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 50%);
+  width: 100%;
+  justify-content: center;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo-text {
+  color: white;
+  font-family: OdinFam;
+  font-size: 70px;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.main-content > div {
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-content p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 20%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+form {
+  padding-right: 30%;
+}
+
+form div {
+  flex: 1;
+}
+
+form section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 6px 10px;
+  border-color: solid 1px rgba(200, 200, 200, 10%);
+}
+
+label {
+  font-size: 13px;
+}
+
+input:focus {
+  border-color: rgba(0, 0, 255, 10%);
+  box-shadow: 2px 2px 5px rgba(0,0,0,50%);
+}
